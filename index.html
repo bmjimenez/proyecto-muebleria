@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-<!###############################################################################>
-<!                               Comienza el head                                >
-<!###############################################################################>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de muebles El Refugio</title>
+    <title>Muebler&iacute;a del Lago</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+ <! Fonts >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,219 +19,216 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <! Librerias de CSS >
-    <link rel="stylesheet" href="../Proyecto/css/app.css">
-    <link rel="stylesheet" href="../Proyecto/css/bootstrap.min.css">
+<! Librerias de CSS >
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/app.css">
 </head>
-<!###############################################################################>
-<! Comienza el body       >
-<!###############################################################################>
+
 <body>
-    <! Contenedor general>
-    <div class="container">
-        <header>
-            <h1 class="titulo-pagina">Tienda de <span style="color:#037bc0">Muebles</span></h1>
-        </header>
-        <! Barra de menu>
-        <div class="navbar-wrapper">
+<! --------------  Comienza el header  ------------------------->
+    <header class="text-center py-3">
+        <h1 class="titulo-pagina">Muebler&iacute;a del <span style="color:#037bc0">Lago</span></h1>
+    </header>
+
+    <! ----------------    Barra de menu NAVBAR ---------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
             <div><img src="./imagenes/logo3.png"></div>
-            <div class="topnav">
-                <a href="#inicio">Inicio</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#tienda">Tienda</a>
-                <a href="#blog">Blog</a>
-                <a href="#galeria">Galeria</a>
-                <a href="#contacto">Contacto</a>
-            </div>
-            <!-- Rounded switch -->
-            <div class="container_center">
-                 <div>
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-            </div>
-        </div>
-        <!###############################################################################> 
-        <! Comienza la seccion hero-image
-        <!###############################################################################>
-        <div>
-            <section class="hero-image">
-        
-                    <h1>Nuestros productos</h1>
-                
-            </section>
-        </div>
-
             
-        <!###############################################################################>
-        <! Definicion de los contenedores de las cajas de productos>
-        <!###############################################################################>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Nosotros</a>
+                    </li>
 
-        <div id="contenedor">
-            <div>
-                <img src="../Proyecto/imagenes/producto1.jpg" class="img-fluid" style="object-fit: cover;">
-                <!img src="../Proyecto/imagenes/producto1.jpg"  class = "img-responsive" width = "100%">
-            </div>
-            <div class="product-description">
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#">Tienda</a>
+                    </li>
 
-                <p><h2>Producto 1</h2></p>
-                <p>ipsum dolor sit, amet consectetur adipisicing elit. Hic fugiat eum, facilis quia officia molestiae similique corporis expedita doloribus odio. Veniam magni, quos optio possimus id maxime voluptatum voluptatem ipsum!</p>
-                <p><h2>$12,000.00</h2></p>
-                <br>
-                <button class="button">
-                        Agregar al carrito
-                </button>
-                <br><br>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#">Galer&iacute;a</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
             </div>
         </div>
-        <p></p>
-    
-        <div id="contenedor">
-            <div >
-                <img src="../Proyecto/imagenes/producto2.jpg" class="img-fluid" style="object-fit: cover;">
-                <!img src="../Proyecto/imagenes/producto2.jpg"  class = "img-responsive" width = "100%">
-            </div>
-            <div >
-                <img src="../Proyecto/imagenes/producto3.jpg" class="img-fluid" style="object-fit: cover;">
-                <!img src="../Proyecto/imagenes/producto3.jpg"  class = "img-responsive" width = "100%">
-            </div>
+    </nav>
+
+    <section class="hero-image">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1>Tienda en línea con bootstrap</h1>
+          
         </div>
+    </section>
 
-        <!Comienza definicion de contenedor de 2 columnas>
-        <div id="contenedor">
-            <div class="product-description">
+    <main class="p-4 p-sm-4 p-lg-5">
+        <h2 class="text-center my-4">Nuestros Productos</h2>
 
-                <p><h2>Producto 2</h2></p>
-                <p>ipsum dolor sit, amet consectetur adipisicing elit. Hic fugiat eum, facilis quia officia molestiae similique corporis expedita doloribus odio. Veniam magni, quos optio possimus id maxime voluptatum voluptatem ipsum!</p>
-                <p><h2>$17,000.00</h2></p>
-                <br>
-                <button class="button">
-                     Agregar al carrito
-                    </button>
-                <br><br>
-            </div>
-            <div class="product-description">
+        <!-- SECCIÓN 1 -->
+        <section class="mb-4">
+            <!-- primer producto -->
+            <article class="row gx-0">
 
-                <p><h2>Producto 3</h2></p>
-                <p>ipsum dolor sit, amet consectetur adipisicing elit. Hic fugiat eum, facilis quia officia molestiae similique corporis expedita doloribus odio. Veniam magni, quos optio possimus id maxime voluptatum voluptatem ipsum!</p>
-                <p><h2>$19,000.00</h2></p>
-                <br>
-                    <button class="button">
-                        Agregar al carrito
-                    </button>
-                <br><br>
-            </div>
-        </div>
-
-        <p></p>
-        <!Comienza definicion de contenedor de 3 imagenes en columnas>
-        <div id="contenedor3">
-            <div >
-                <img src="../Proyecto/imagenes/producto4.jpg" class="img-fluid" style="object-fit: cover;">
-                <!img src="../Proyecto/imagenes/producto2.jpg"  class = "img-responsive" width = "100%">
-            </div>
-            <div >
-                <img src="../Proyecto/imagenes/producto5.jpg" class="img-fluid" style="object-fit: cover;">
-                <!img src="../Proyecto/imagenes/producto3.jpg"  class = "img-responsive" width = "100%">
-            </div>
-            <div >
-                <img src="../Proyecto/imagenes/producto6.jpg" class="img-fluid" style="object-fit: cover;">
-                <!img src="../Proyecto/imagenes/producto3.jpg"  class = "img-responsive" width = "100%">
-            </div>
-        </div>
-
-        <!Comienza definicion de contenedor de 3 descripciones en columnas>
-        <div id="contenedor3">
-            <div class="product-description">
-
-                <p><h2>Producto 4</h2></p>
-                <p>ipsum dolor sit, amet consectetur adipisicing elit. Hic fugiat eum, facilis quia officia molestiae similique corporis expedita doloribus odio. Veniam magni, quos optio possimus id maxime voluptatum voluptatem ipsum!</p>
-                <p><h2>$17,000.00</h2></p>
-                <br>
-                    <br><button class="button">
-                        Agregar al carrito
-                    </button>
-                    <br><br>
-                
-            </div>
-            <div class="product-description">
-
-                <p><h2>Producto 5</h2></p>
-                <p>ipsum dolor sit, amet consectetur adipisicing elit. Hic fugiat eum, facilis quia officia molestiae similique corporis expedita doloribus odio. Veniam magni, quos optio possimus id maxime voluptatum voluptatem ipsum!</p>
-                <p><h2>$19,000.00</h2></p>
-                <br>
-                    <br><button class="button">
-                        Agregar al carrito
-                    </button>
-                    <br><br>
-            </div>
-            <div class="product-description">
-
-                <p><h2>Producto 6</h2></p>
-                <p>ipsum dolor sit, amet consectetur adipisicing elit. Hic fugiat eum, facilis quia officia molestiae similique corporis expedita doloribus odio. Veniam magni, quos optio possimus id maxime voluptatum voluptatem ipsum!</p>
-                <p><h2>$19,000.00</h2></p>
-                <br>
-                    <br><button class="button">
-                        Agregar al carrito
-                    </button>
-                    <br><br>
-            </div>
-        </div>
-        <!#######################################>
-        <! Seccion de productos>
-        <!#######################################>
-        <br>
-        
-        <section>
-            <h2>Seccion de Productos</h2>
-            <p></p>
-            <!Comienza contenedor de 3 imagenes en columnas para seccion de productos>
-            <div id="contenedor3">
-                <div>
-                <img src="../Proyecto/imagenes/categoria1.jpg" class="img-fluid" style="object-fit: cover;">
-                <!img src="../Proyecto/imagenes/producto2.jpg" class="img-responsive" width="100%">
-                
-             </div>
-                <div>
-                <img src="../Proyecto/imagenes/categoria2.jpg" class="img-fluid" style="object-fit: cover;">
-                <!img src="../Proyecto/imagenes/producto3.jpg" class="img-responsive" width="100%">
-             </div>
-             <div>
-                <img src="../Proyecto/imagenes/categoria3.jpg" class="img-fluid" style="object-fit: cover;">
-                <!img src="../Proyecto/imagenes/producto3.jpg" class="img-responsive" width="100%">
-             </div>
-            </div>
-
-            <!Comienza contenedor de 3 descripciones en columnas para seccion de productos>
-            <div id="contenedor3">
-                <div class="product-description">
-                    <p>
-                    <a href="#"><h2>Oficina</h2></a>
-                    </p>
+                <!-- columna 1 imagen -->
+                <div class="col-12 col-xs-12 col-sm-12  col-lg-6 col-xl-6 overflow-hidden">
+                    <img class="w-100" src="./imagenes/producto1.jpg" alt="">
                 </div>
-                 <div class="product-description">
-                <p>
-                    <a href="#"><h2>Hogar</h2></a>
-                </p>
+
+                <!-- columna 2 descripcion del producto -->
+                <div class="col-12 col-xs-12 col-sm-12  col-lg-6 col-xl-6 bg-primary d-flex flex-column align-items-center justify-content-center text-white text-center px-5 py-4">
+                    <h3>Rec&aacute;mara</h3>
+                    <p>Rec&aacute;mara individual incluye cabecera tapizada </p>
+                    <span class="fw-bold mb-3 fs-3">$7,500</span> 
+                    <button class="p-3 py-2  redondeo bg-success border-0 ">Agregar al carrito</button>
                 </div>
-                <div class="product-description">
-                <p>
-                    <a href="#"><h2>Cocina</h2></a>
-                </p>
-                </div>
-            </div>
+            </article>
         </section>
-        <br>
+
+        <!-- SECCIÓN 2 -->
+        <section class="row mb-4">
+            <!-- primer producto -->
+            <article class=" col-12 col-lg-6 mb-4 mb-sm-4 mb-lg-0 ">
+
+                <!-- Columna 1 Imagen del producto-->
+                <img class="w-100" src="./imagenes/producto2.jpg" alt="">
+                
+                <!-- columna 2 Descripcion del producto -->
+                <div class="col-12 col-xs-12 col-sm-12   bg-primary d-flex flex-column align-items-center justify-content-center text-white text-center px-5 py-4">
+                    <h3> Mueble de sala</h3>
+                    <p>Mueble de sala en madera MDF reforzada</p>
+                    <span class="fw-bold mb-3 fs-3">$8,500</span> 
+                    <button class="p-3 py-2  redondeo bg-success border-0 ">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class=" col-12 col-lg-6 ">
+
+                <!-- columna 1 imagen del producto 3-->
+                <img class="w-100" src="./imagenes/producto3.jpg" alt="">
+        
+                <!-- columna 2 Descripcion del producto -->
+                
+                <div class="col-12 col-xs-12 col-sm-12   bg-primary d-flex flex-column align-items-center justify-content-center text-white text-center px-5 py-4">
+                    <h3>Rec&aacute;mara</h3>
+                    <p>Rec&aacute;mara matrimonial sin cabecera </p>
+                    <span class="fw-bold mb-3 fs-3">$10,000</span> 
+                    <button class="p-3 py-2  redondeo bg-success border-0 ">Agregar al carrito</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section class="row">
+            <!-- primer producto -->
+            <article class=" col-12 col-lg-4 mb-4 mb-sm-4 mb-lg-0 ">
+
+                <!-- columna 1 Imagen del producto -->
+                <img class="w-100" src="./imagenes/producto4.jpg" alt="">
+                
+                <!-- columna 2 Descripcion del producto -->
+                <div class="col-12 col-xs-12 col-sm-12   bg-primary d-flex flex-column align-items-center justify-content-center text-white text-center px-5 py-4">
+                    <h3> Sala</h3>
+                    <p>Sala verde militar</p>
+                    <span class="fw-bold mb-3 fs-3">$13,000</span> 
+                    <button class="p-3 py-2  redondeo bg-success border-0 ">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class=" col-12 col-lg-4 mb-4 mb-sm-4 mb-lg-0 ">
+
+                <!-- columna 1 -->
+                <img class="w-100" src="./imagenes/producto5.jpg" alt="">
+                <!-- columna 2 -->
+                
+                <div class="col-12 col-xs-12 col-sm-12   bg-primary d-flex flex-column align-items-center justify-content-center text-white text-center px-5 py-4">
+                    <h3>Mesa y silla </h3>
+                    <p>Mesa de centro y silla tapizada</p>
+                    <span class="fw-bold mb-3 fs-3">$11,000</span> 
+                    <button class="p-3 py-2  redondeo bg-success border-0 ">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class=" col-12 col-lg-4 ">
+
+                <!-- columna 1 -->
+                <img class="w-100" src="./imagenes/producto6.jpg" alt="">
+                
+                <!-- columna 2 -->
+                
+                <div class="col-12 col-xs-12 col-sm-12   bg-primary d-flex flex-column align-items-center justify-content-center text-white text-center px-5 py-4">
+                    <h3>Sala</h3>
+                    <p>Sala gris tapizada en pliana</p>
+                    <span class="fw-bold mb-3 fs-3">$9,000</span> 
+                    <button class="p-3 py-2  redondeo bg-success border-0 ">Agregar al carrito</button>
+                </div>
+            </article>
+        </section>
+
+        
+<h1 align="center">Secci&oacute;n de productos</h1><p>
+<!-------------------- Seccion de productos ---------------------->
+        <section class="row">
+            <!-- primera categoria-->
+            <article class=" col-12 col-lg-4 mb-4 mb-sm-4 mb-lg-0 ">
+
+                <!-- columna 1 primera categoria-->
+                <img class="w-100" src="./imagenes/categoria1.jpg" alt="">
+                
+                <!-- columna 2 Descripcion del producto -->
+                <div class="col-12 col-xs-12 col-sm-12   bg-primary d-flex flex-column align-items-center justify-content-center text-white text-center px-5 py-4">
+                    <h3><a href="#">Oficina</a></h3>
+                </div>
+            </article>
+            <!-- Segunda categoria-->
+            <article class=" col-12 col-lg-4 mb-4 mb-sm-4 mb-lg-0 ">
+
+                <!-- columna 2 imagen segunda categoria-->
+                <img class="w-100" src="./imagenes/categoria2.jpg" alt="">
+                
+                <!-- columna 2 segunda categoria -->
+                <div class="col-12 col-xs-12 col-sm-12   bg-primary d-flex flex-column align-items-center justify-content-center text-white text-center px-5 py-4">
+                    <h3><a href="#">Hogar</a></h3>
+                </div>
+            </article>
+            <!-- Tercera categoria-->
+            <article class=" col-12 col-lg-4 mb-4 mb-sm-4 mb-lg-0 ">
+
+                <!-- columna  imagen tercera categoria-->
+                <img class="w-100" src="./imagenes/categoria3.jpg" alt="">
+                
+                <!-- columna 3 tercera categoria -->
+                <div class="col-12 col-xs-12 col-sm-12   bg-primary d-flex flex-column align-items-center justify-content-center text-white text-center px-5 py-4">
+                    <h3><a href="#">Cocina</a></h3>
+                </div>
+            </article>
+        </section><p>
         <!########################################>
-        <! Comienza la seccion del footer >
+        <! Comienza la seccion del footer nuevo>
         <!########################################>
-        <footer>
-            <! Primera columna del footer>
-            <div id="contenedor3">
-                <div class="footer-description">
+<!-------------------- Seccion de productos ---------------------->
+        <section class="row">
+            <!-- primera categoria-->
+            <article class=" col-12 col-lg-4 mb-4 mb-sm-4 mb-lg-0 ">
+
+                <div class="col-12 col-xs-12 col-sm-12   bg-primary d-flex flex-column align-items-center justify-content-center text-black text-center px-5 py-4">
                     <ul>
                         <h3>Categorias</h3>
                         <li><a href="#">Cocina</a></li>
@@ -239,10 +238,12 @@
                         <li><a href="#">Dormitorios</a></li>
                     </ul>
                 </div>
-                
-                <! Segunda columna del footer>
-                <div class="footer-description">
-                    
+            </article>
+
+            <!-- Segunda columna footer -->
+            <article class=" col-12 col-lg-4 mb-4 mb-sm-4 mb-lg-0 ">
+                <!-- columna 2 footer-->
+                <div class="col-12 col-xs-12 col-sm-12   bg-primary d-flex flex-column align-items-center justify-content-center text-black text-center px-5 py-4">
                     <ul>
                     <h3>Sobre nosotros</h3>
                     <li><a href="#">Nuestra historia</a></li>
@@ -252,23 +253,34 @@
                     <li><a href="#">T&eacute;rminos del servicio</a></li>
                 </ul> 
                 </div>
-        
-                <! Tercera columna del footer>
-                <div class="footer-description">
-                    <ul>
+            </article>
+            <!-- Tercera col del footr -->
+            <article class=" col-12 col-lg-4 mb-4 mb-sm-4 mb-lg-0 ">
+
+                
+                
+                <!-- columna 3 tercera categoria -->
+                <div class="col-12 col-xs-12 col-sm-12   bg-primary d-flex flex-column align-items-center justify-content-center text-black text-center px-5 py-4">
+                     <ul>
                         <h3>Soporte</h3>
                         <li><a href="#">Preguntas frecuentes</a></li>
                         <li><a href="#">Ayuda en l&iacute;nea</a></li>
                         <li><a href="#">Confianza y Seguridad</a></li>
                     </ul> 
                 </div>
-            </div>
-        </footer>
-        <!########################################>
-        <! Termina la seccion del footer >
-        <!########################################>
+            </article>
+        </section>
+
+
+
+        
 
         <br><span> Copyright &#169;2025 Todos los derechos reservados Tienda de muebles El Refugio  </span>
     </div><!termina el div de la clase container>
+
+    </main>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
